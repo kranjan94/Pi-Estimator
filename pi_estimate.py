@@ -16,7 +16,7 @@ def run_trials(num_trials):
         point_x = -1 + (2 * random.random()) 
         point_y = -1 + (2 * random.random())
         point = (point_x, point_y)
-        hit = int(distance(point) <= 1) 
+        hit = distance(point) <= 1
         in_circle += int(hit) # 1 iff point is in circle
     return (4*in_circle)/num_trials
     
